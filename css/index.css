@@ -182,6 +182,17 @@ a:hover {
 }
 .Intro {
   background-color: whitesmoke;
+  padding: 5%;
+  margin-right: 50%;
+}
+.Skills {
+  margin-left: -40%;
+  border: 1px solid lightsteelblue;
+  padding: 5%;
+}
+.NutshellSkills {
+  display: flex;
+  flex-direction: row;
 }
 .Workplace1 {
   background-color: whitesmoke;
