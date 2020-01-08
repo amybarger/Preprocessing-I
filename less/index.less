@@ -53,7 +53,62 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
 }
 
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 62.5%;
+}
+
+@main-color: aliceblue;
+@secondary-color: whitesmoke;
+
+header {
+  background-color: @main-color;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+ul {
+	font-size: 1.5rem;
+}
+
+nav {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-right: 5%;
+}
+
+a {
+	text-decoration: none;
+	margin-right: 5%;
+}
+
+.Intro {
+	background-color: @secondary-color;
+}
+
+.Workplace1 {
+	background-color: @secondary-color;
+}
+
+.Workplace3 {
+	background-color: @secondary-color;
+}
+
+footer {
+	background-color: @primary-color;
+}
