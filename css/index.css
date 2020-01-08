@@ -140,6 +140,12 @@ html {
 }
 header {
   background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5%;
+  justify-content: space-between;
+  border-bottom: 3px solid lightsteelblue;
 }
 h1 {
   font-size: 4rem;
@@ -156,11 +162,23 @@ ul {
 nav {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 20%;
+  margin-top: 2%;
+  font-size: 2rem;
 }
 a {
   text-decoration: none;
-  margin-right: 5%;
+  margin-right: 10%;
+  color: black;
+}
+@media (max-width: 2560px) {
+  a {
+    margin-right: 20%;
+  }
+}
+a:hover {
+  color: lightsteelblue;
 }
 .Intro {
   background-color: whitesmoke;
@@ -170,4 +188,7 @@ a {
 }
 .Workplace3 {
   background-color: whitesmoke;
+}
+footer {
+  background-color: aliceblue;
 }

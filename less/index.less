@@ -65,9 +65,16 @@ html {
 
 @main-color: aliceblue;
 @secondary-color: whitesmoke;
+@accent-color: lightsteelblue;
 
 header {
   background-color: @main-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5%;
+  justify-content: space-between;
+  border-bottom: 3px solid @accent-color;
 }
 
 h1 {
@@ -89,12 +96,24 @@ ul {
 nav {
 	display: flex;
 	flex-direction: row-reverse;
-	margin-right: 5%;
+	margin-left: 10%;
+	margin-right: 20%;
+	margin-top: 2%;
+	font-size: 2rem;
 }
 
 a {
 	text-decoration: none;
-	margin-right: 5%;
+	margin-right: 10%;
+	color: black;
+		@media (max-width:2560px) {
+			margin-right: 20%;
+		}
+
+}
+
+a:hover {
+	color: @accent-color;
 }
 
 .Intro {
@@ -110,5 +129,5 @@ a {
 }
 
 footer {
-	background-color: @primary-color;
+	background-color: @main-color;
 }
