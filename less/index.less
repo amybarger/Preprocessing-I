@@ -62,10 +62,24 @@ html {
 	font-family: 'Raleway', sans-serif;
 	font-size: 62.5%;
 }
-
+// Properties
 @main-color: aliceblue;
 @secondary-color: whitesmoke;
 @accent-color: lightsteelblue;
+
+// Mixins
+.HistorySettings {
+	background-color: @secondary-color;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2%;
+	padding-left: 5%;
+}
+
+.DetailsMargin {
+	margin-right: 50%;
+}
 
 header {
   background-color: @main-color;
@@ -134,16 +148,38 @@ a:hover {
 	flex-direction: row;
 }
 
+.Border {
+	border: 1px solid @accent-color;
+}
+
 .Workplace1 {
-	background-color: @secondary-color;
+	.HistorySettings();
+}
+
+.Details1 {
+	.DetailsMargin();
+}
+
+.Workplace2 {
+	.HistorySettings();
+	background-color: white;
+}
+
+.Details2 {
+	.DetailsMargin();
 }
 
 .Workplace3 {
-	background-color: @secondary-color;
+	.HistorySettings();
+}
+
+.Details3 {
+	.DetailsMargin();
 }
 
 footer {
 	background-color: @main-color;
 	padding: 3%;
 	border-top: 3px solid @accent-color;
+	text-align: center;
 }
