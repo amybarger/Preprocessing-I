@@ -191,4 +191,6 @@ a:hover {
 }
 footer {
   background-color: aliceblue;
+  padding: 3%;
+  border-top: 3px solid lightsteelblue;
 }
