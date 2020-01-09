@@ -142,14 +142,13 @@ html {
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
   padding: 2%;
   padding-left: 12%;
 }
 .DetailsMargin {
   margin-right: 50%;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 header {
   background-color: aliceblue;
@@ -165,8 +164,13 @@ h1 {
   font-size: 4rem;
   margin-left: 10%;
 }
+#Barger {
+  font-weight: bolder;
+  margin-left: 0.2%;
+}
 h2 {
   font-size: 2rem;
+  font-weight: bold;
 }
 p {
   font-size: 1.5rem;
@@ -174,6 +178,7 @@ p {
 }
 ul {
   font-size: 1.5rem;
+  list-style-type: square;
 }
 li {
   text-align: left;
@@ -211,6 +216,7 @@ a:hover {
   padding: 5%;
   width: 40%;
   height: 26vh;
+  text-align: center;
 }
 .NutshellSkills {
   display: flex;
@@ -226,20 +232,18 @@ a:hover {
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
   padding: 2%;
   padding-left: 12%;
 }
 .Details1 {
   margin-right: 50%;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 .Workplace2 {
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
   padding: 2%;
   padding-left: 12%;
@@ -247,20 +251,19 @@ a:hover {
 }
 .Details2 {
   margin-right: 50%;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 .Workplace3 {
   background-color: whitesmoke;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   justify-content: center;
   padding: 2%;
   padding-left: 12%;
 }
 .Details3 {
   margin-right: 50%;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 footer p {
   background-color: aliceblue;
