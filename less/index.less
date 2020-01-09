@@ -81,9 +81,11 @@ html {
 .DetailsMargin {
 	margin-right: 50%;
 	margin-left: 65%;
+	text-align: left;
 	border: 1px solid red;
 }
 
+// Basic CSS
 header {
   background-color: @main-color;
   display: flex;
@@ -93,16 +95,82 @@ header {
   padding: 5%;
   justify-content: space-between;
   border-bottom: 3px solid @accent-color;
+
+	h1 {
+		font-size: 4rem;
+		margin-left: 10%;
+			@media (max-width:2560px) {
+				font-size: 8rem;
+			}
+			@media (max-width:500px) {
+				font-size: 5rem;
+			}
+
+	}
+
+	#Barger {
+		font-weight: bolder;
+		margin-left: -5%;
+	}
+
+
+	.NavHeader {
+		display: flex;
+		flex-direction: row-reverse;
+		margin-left: 20%;
+		margin-right: 5%;
+		margin-top: 2%;
+		font-size: 2rem;
+	
+	
+		a {
+			text-decoration: none;
+			margin-right: 10%;
+			color: black;
+				@media (max-width:2560px){
+					margin-right: 20%;
+				} 
+					
+				
+				
+		
+		
+		
+		a:hover {
+			color: @accent-color;
+	
+		}
+		}	
+	}	
+		
+		
+	
+
+		
 }
 
-h1 {
-	font-size: 4rem;
-	margin-left: 10%;
+.NutshellSkills {
+	display: flex;
+	flex-direction: row;
 }
 
-#Barger {
-	font-weight: bolder;
-	margin-left: .2%;
+.Intro {
+	background-color: @secondary-color;
+	padding: 5%;
+	margin-right: 50%;
+	margin-left: 8%;
+	width: 40%;
+	height: 35vh;
+}
+
+ul {
+	font-size: @main-paragraph-size;
+	list-style-type: square;
+	margin-left: 15%;
+
+	li {
+		text-align: left;
+	}	
 }
 
 h2 {
@@ -115,49 +183,6 @@ p {
 	text-align: left;
 }
 
-ul {
-	font-size: @main-paragraph-size;
-	list-style-type: square;
-	margin-left: 15%;
-}
-
-li {
-	text-align: left;
-}
-
-.NavHeader {
-	display: flex;
-	flex-direction: row-reverse;
-	margin-left: 20%;
-	margin-right: 5%;
-	margin-top: 2%;
-	font-size: 2rem;
-}
-
-a {
-	text-decoration: none;
-	margin-right: 10%;
-	color: black;
-		@media (max-width:2560px) {
-			margin-right: 20%;
-		}
-		
-
-}
-
-a:hover {
-	color: @accent-color;
-}
-
-.Intro {
-	background-color: @secondary-color;
-	padding: 5%;
-	margin-right: 50%;
-	margin-left: 8%;
-	width: 40%;
-	height: 35vh;
-}
-
 .Skills {
 	margin-left: -40%;
 	margin-right: 8%;
@@ -167,21 +192,14 @@ a:hover {
 	height: 35vh;
 }
 
-.NutshellSkills {
-	display: flex;
-	flex-direction: row;
-}
-
 .Border {
 	border: 1px solid @accent-color;
 }
 
-.History h2 {
-	
-
-}
-
 .WorkName {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
 	border: 1px solid purple;
 	
 }
@@ -190,24 +208,16 @@ a:hover {
 	.HistorySettings();
 }
 
-.Details1 {
-	.DetailsMargin();
-}
-
 .Workplace2 {
 	.HistorySettings();
 	background-color: white;
-}
-
-.Details2 {
-	.DetailsMargin();
 }
 
 .Workplace3 {
 	.HistorySettings();
 }
 
-.Details3 {
+.Details {
 	.DetailsMargin();
 }
 
@@ -216,15 +226,19 @@ footer {
 	padding: 3%;
 	border-top: 3px solid @accent-color;
 	text-align: center;
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		color: @secondary-color;
+		margin-left: 13%;
+		justify-content: space-between;
+	}
+
+	footer p {
+		text-align: center;
+	}
 }
 
-nav {
-	display: flex;
-	flex-direction: row;
-	color: @secondary-color;
-	margin-left: 13%;
-}
 
-footer p {
-	text-align: center;
-}
+

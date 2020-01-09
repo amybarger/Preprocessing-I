@@ -149,6 +149,7 @@ html {
 .DetailsMargin {
   margin-right: 50%;
   margin-left: 65%;
+  text-align: left;
   border: 1px solid red;
 }
 header {
@@ -161,31 +162,25 @@ header {
   justify-content: space-between;
   border-bottom: 3px solid lightsteelblue;
 }
-h1 {
+header h1 {
   font-size: 4rem;
   margin-left: 10%;
 }
-#Barger {
+@media (max-width: 2560px) {
+  header h1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+header #Barger {
   font-weight: bolder;
-  margin-left: 0.2%;
+  margin-left: -5%;
 }
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-p {
-  font-size: 1.7rem;
-  text-align: left;
-}
-ul {
-  font-size: 1.7rem;
-  list-style-type: square;
-  margin-left: 15%;
-}
-li {
-  text-align: left;
-}
-.NavHeader {
+header .NavHeader {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 20%;
@@ -193,18 +188,22 @@ li {
   margin-top: 2%;
   font-size: 2rem;
 }
-a {
+header .NavHeader a {
   text-decoration: none;
   margin-right: 10%;
   color: black;
 }
 @media (max-width: 2560px) {
-  a {
+  header .NavHeader a {
     margin-right: 20%;
   }
 }
-a:hover {
+header .NavHeader a a:hover {
   color: lightsteelblue;
+}
+.NutshellSkills {
+  display: flex;
+  flex-direction: row;
 }
 .Intro {
   background-color: whitesmoke;
@@ -214,6 +213,22 @@ a:hover {
   width: 40%;
   height: 35vh;
 }
+ul {
+  font-size: 1.7rem;
+  list-style-type: square;
+  margin-left: 15%;
+}
+ul li {
+  text-align: left;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1.7rem;
+  text-align: left;
+}
 .Skills {
   margin-left: -40%;
   margin-right: 8%;
@@ -222,14 +237,13 @@ a:hover {
   width: 40%;
   height: 35vh;
 }
-.NutshellSkills {
-  display: flex;
-  flex-direction: row;
-}
 .Border {
   border: 1px solid lightsteelblue;
 }
 .WorkName {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   border: 1px solid purple;
 }
 .Workplace1 {
@@ -238,11 +252,6 @@ a:hover {
   justify-content: center;
   padding: 2%;
   padding-left: 35%;
-  border: 1px solid red;
-}
-.Details1 {
-  margin-right: 50%;
-  margin-left: 65%;
   border: 1px solid red;
 }
 .Workplace2 {
@@ -254,11 +263,6 @@ a:hover {
   border: 1px solid red;
   background-color: white;
 }
-.Details2 {
-  margin-right: 50%;
-  margin-left: 65%;
-  border: 1px solid red;
-}
 .Workplace3 {
   background-color: whitesmoke;
   display: flex;
@@ -267,9 +271,10 @@ a:hover {
   padding-left: 35%;
   border: 1px solid red;
 }
-.Details3 {
+.Details {
   margin-right: 50%;
   margin-left: 65%;
+  text-align: left;
   border: 1px solid red;
 }
 footer {
@@ -278,12 +283,13 @@ footer {
   border-top: 3px solid lightsteelblue;
   text-align: center;
 }
-nav {
+footer nav {
   display: flex;
   flex-direction: row;
   color: whitesmoke;
   margin-left: 13%;
+  justify-content: space-between;
 }
-footer p {
+footer footer p {
   text-align: center;
 }
