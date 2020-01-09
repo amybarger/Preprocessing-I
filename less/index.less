@@ -66,6 +66,7 @@ html {
 @main-color: aliceblue;
 @secondary-color: whitesmoke;
 @accent-color: lightsteelblue;
+@main-paragraph-size: 1.7rem;
 
 // Mixins
 .HistorySettings {
@@ -109,12 +110,12 @@ h2 {
 }
 
 p {
-	font-size: 1.5rem;
+	font-size: @main-paragraph-size;
 	text-align: left;
 }
 
 ul {
-	font-size: 1.5rem;
+	font-size: @main-paragraph-size;
 	list-style-type: square;
 }
 
@@ -122,7 +123,7 @@ li {
 	text-align: left;
 }
 
-nav {
+.NavHeader {
 	display: flex;
 	flex-direction: row-reverse;
 	margin-left: 20%;
@@ -203,9 +204,20 @@ a:hover {
 	.DetailsMargin();
 }
 
-footer p {
+footer {
 	background-color: @main-color;
 	padding: 3%;
 	border-top: 3px solid @accent-color;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	color: @secondary-color;
+	margin-left: 13%;
+}
+
+footer p {
 	text-align: center;
 }

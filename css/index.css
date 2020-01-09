@@ -173,17 +173,17 @@ h2 {
   font-weight: bold;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left;
 }
 ul {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   list-style-type: square;
 }
 li {
   text-align: left;
 }
-nav {
+.NavHeader {
   display: flex;
   flex-direction: row-reverse;
   margin-left: 20%;
@@ -265,9 +265,18 @@ a:hover {
   margin-right: 50%;
   margin-left: 30%;
 }
-footer p {
+footer {
   background-color: aliceblue;
   padding: 3%;
   border-top: 3px solid lightsteelblue;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  margin-left: 13%;
+}
+footer p {
   text-align: center;
 }
