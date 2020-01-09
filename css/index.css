@@ -141,14 +141,15 @@ html {
 .HistorySettings {
   background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 2%;
-  padding-left: 12%;
+  padding-left: 35%;
+  border: 1px solid red;
 }
 .DetailsMargin {
   margin-right: 50%;
-  margin-left: 30%;
+  margin-left: 65%;
+  border: 1px solid red;
 }
 header {
   background-color: aliceblue;
@@ -179,6 +180,7 @@ p {
 ul {
   font-size: 1.7rem;
   list-style-type: square;
+  margin-left: 15%;
 }
 li {
   text-align: left;
@@ -208,62 +210,67 @@ a:hover {
   background-color: whitesmoke;
   padding: 5%;
   margin-right: 50%;
+  margin-left: 8%;
   width: 40%;
+  height: 35vh;
 }
 .Skills {
   margin-left: -40%;
+  margin-right: 8%;
   border: 1px solid lightsteelblue;
   padding: 5%;
   width: 40%;
-  height: 26vh;
-  text-align: center;
+  height: 35vh;
 }
 .NutshellSkills {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 .Border {
   border: 1px solid lightsteelblue;
 }
+.WorkName {
+  border: 1px solid purple;
+}
 .Workplace1 {
   background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 2%;
-  padding-left: 12%;
+  padding-left: 35%;
+  border: 1px solid red;
 }
 .Details1 {
   margin-right: 50%;
-  margin-left: 30%;
+  margin-left: 65%;
+  border: 1px solid red;
 }
 .Workplace2 {
   background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 2%;
-  padding-left: 12%;
+  padding-left: 35%;
+  border: 1px solid red;
   background-color: white;
 }
 .Details2 {
   margin-right: 50%;
-  margin-left: 30%;
+  margin-left: 65%;
+  border: 1px solid red;
 }
 .Workplace3 {
   background-color: whitesmoke;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   padding: 2%;
-  padding-left: 12%;
+  padding-left: 35%;
+  border: 1px solid red;
 }
 .Details3 {
   margin-right: 50%;
-  margin-left: 30%;
+  margin-left: 65%;
+  border: 1px solid red;
 }
 footer {
   background-color: aliceblue;
