@@ -144,13 +144,11 @@ html {
   justify-content: center;
   padding: 2%;
   padding-left: 35%;
-  border: 1px solid red;
 }
 .DetailsMargin {
   margin-right: 50%;
   margin-left: 65%;
   text-align: left;
-  border: 1px solid red;
 }
 header {
   background-color: aliceblue;
@@ -168,7 +166,7 @@ header h1 {
 }
 @media (max-width: 500px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 header #Barger {
@@ -178,7 +176,7 @@ header #Barger {
 }
 @media (max-width: 500px) {
   header #Barger {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 header .NavHeader {
@@ -200,25 +198,44 @@ header .NavHeader a {
   margin-right: 10%;
   color: black;
 }
-header .NavHeader a a:hover {
+header .NavHeader a:hover {
   color: lightsteelblue;
 }
 .NutshellSkills {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .NutshellSkills {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .Intro {
   background-color: whitesmoke;
   padding: 5%;
   margin-right: 50%;
   margin-left: 8%;
+  padding-bottom: 20%;
   width: 40%;
   height: 35vh;
+}
+@media (max-width: 500px) {
+  .Intro {
+    height: 20vh;
+    width: 80%;
+    padding-bottom: 50%;
+  }
 }
 ul {
   font-size: 1.7rem;
   list-style-type: square;
   margin-left: 15%;
+}
+@media (max-width: 500px) {
+  ul {
+    column-count: 2;
+  }
 }
 ul li {
   text-align: left;
@@ -236,8 +253,17 @@ p {
   margin-right: 8%;
   border: 1px solid lightsteelblue;
   padding: 5%;
+  padding-bottom: 20%;
   width: 40%;
   height: 35vh;
+}
+@media (max-width: 500px) {
+  .Skills {
+    margin-left: 8%;
+    height: 20vh;
+    width: 80%;
+    padding-bottom: 50%;
+  }
 }
 .Border {
   border: 1px solid lightsteelblue;
@@ -246,7 +272,6 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  border: 1px solid purple;
 }
 .Workplace1 {
   background-color: whitesmoke;
@@ -254,7 +279,6 @@ p {
   justify-content: center;
   padding: 2%;
   padding-left: 35%;
-  border: 1px solid red;
 }
 .Workplace2 {
   background-color: whitesmoke;
@@ -262,7 +286,6 @@ p {
   justify-content: center;
   padding: 2%;
   padding-left: 35%;
-  border: 1px solid red;
   background-color: white;
 }
 .Workplace3 {
@@ -271,13 +294,11 @@ p {
   justify-content: center;
   padding: 2%;
   padding-left: 35%;
-  border: 1px solid red;
 }
 .Details {
   margin-right: 50%;
   margin-left: 65%;
   text-align: left;
-  border: 1px solid red;
 }
 footer {
   background-color: aliceblue;
@@ -293,14 +314,22 @@ footer nav {
   margin-right: 13%;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  footer nav {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer nav a {
   text-decoration: none;
   margin-right: 10%;
   color: black;
+  font-size: 1.2rem;
 }
 footer nav a a:hover {
   color: lightsteelblue;
 }
 footer p {
   text-align: center;
+  font-size: 1rem;
 }
