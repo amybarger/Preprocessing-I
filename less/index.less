@@ -53,7 +53,217 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
     height: 100%;
 }
 
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 62.5%;
+}
+// Properties
+@main-color: aliceblue;
+@secondary-color: whitesmoke;
+@accent-color: lightsteelblue;
+@main-paragraph-size: 1.7rem;
+
+// Mixins
+.HistorySettings {
+	background-color: @secondary-color;
+	display: flex;
+	justify-content: center;
+	padding: 2%;
+}
+
+.DetailsMargin {
+	padding-left: 10%;
+}
+
+// Basic CSS
+header {
+  background-color: @main-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  justify-content: space-between;
+  border-bottom: 3px solid @accent-color;
+
+	h1 {
+		font-size: 6rem;
+		margin-left: 10%;
+			
+			@media (max-width: 500px) {
+				font-size: 3rem;
+			}
+
+	}
+
+	#Barger {
+		font-size: 6rem;
+		font-weight: bolder;
+		margin-left: -5%;
+		
+		@media (max-width: 500px) {
+			font-size: 3rem;
+		}
+	}
+
+
+	.NavHeader {
+		display: flex;
+		flex-direction: row-reverse;
+		margin-left: 20%;
+		margin-right: 5%;
+		margin-top: 2%;
+		font-size: 2rem;
+			@media (max-width: 500px) {
+				display: flex;
+				flex-direction: column;
+			}
+	
+		a {
+			text-decoration: none;
+			margin-right: 10%;
+			color: black;
+		}
+
+		a:hover {
+			color: @accent-color; 
+		 }
+	}			
+}
+
+.NutshellSkills {
+	display: flex;
+	flex-direction: row;
+		@media (max-width: 500px) {
+			display: flex;
+			flex-direction: column;
+		}
+}
+
+.Intro {
+	background-color: @secondary-color;
+	padding: 5%;
+	margin-right: 50%;
+	margin-left: 8%;
+	padding-bottom: 20%;
+	width: 40%;
+	height: 35vh;
+		@media (max-width: 500px) {
+			height: 20vh;
+			width: 80%;
+			padding-bottom: 50%;
+		}
+}
+
+ul {
+	font-size: @main-paragraph-size;
+	list-style-type: square;
+	margin-left: 15%;
+		@media (max-width: 500px) {
+			column-count: 2;
+		}
+
+	li {
+		text-align: left;
+	}	
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+p {
+	font-size: @main-paragraph-size;
+	text-align: left;
+}
+
+.Skills {
+	margin-left: -40%;
+	margin-right: 8%;
+	border: 1px solid @accent-color;
+	padding: 5%;
+	padding-bottom: 20%;
+	width: 40%;
+	height: 35vh;
+		@media (max-width: 500px) {
+			margin-left: 8%;
+			height: 20vh;
+			width: 80%;
+			padding-bottom: 50%;
+		}
+}
+
+.Border {
+	border: 1px solid @accent-color;
+}
+
+.History {
+	text-align: center;
+}
+
+.WorkName {
+	display: flex;
+	justify-content: left;
+}
+
+.Workplace1 {
+	.HistorySettings();
+}
+
+.Workplace2 {
+	.HistorySettings();
+	background-color: white;
+}
+
+.Workplace3 {
+	.HistorySettings();
+}
+
+.Details {
+	.DetailsMargin();
+}
+
+footer {
+	background-color: @main-color;
+	padding: 3%;
+	border-top: 3px solid @accent-color;
+	text-align: center;
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		color: @secondary-color;
+		margin-left: 13%;
+		margin-right: 13%;
+		justify-content: space-between;
+			@media (max-width: 500px) {
+			display: flex;
+			justify-content: center;
+		}
+
+		a {
+			text-decoration: none;
+			margin-right: 10%;
+			color: black;
+			font-size: 1.2rem;
+		
+			a:hover {
+			color: @accent-color;
+			
+			 }
+
+		}
+	}
+
+	 p {
+		text-align: center;
+		font-size: 1rem;
+	}
+}
+	

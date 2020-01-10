@@ -1,1 +1,329 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-family: 'Raleway', sans-serif;
+  font-size: 62.5%;
+}
+.HistorySettings {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.DetailsMargin {
+  padding-left: 10%;
+}
+header {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  justify-content: space-between;
+  border-bottom: 3px solid lightsteelblue;
+}
+header h1 {
+  font-size: 6rem;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+header #Barger {
+  font-size: 6rem;
+  font-weight: bolder;
+  margin-left: -5%;
+}
+@media (max-width: 500px) {
+  header #Barger {
+    font-size: 3rem;
+  }
+}
+header .NavHeader {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-top: 2%;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header .NavHeader {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .NavHeader a {
+  text-decoration: none;
+  margin-right: 10%;
+  color: black;
+}
+header .NavHeader a:hover {
+  color: lightsteelblue;
+}
+.NutshellSkills {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .NutshellSkills {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Intro {
+  background-color: whitesmoke;
+  padding: 5%;
+  margin-right: 50%;
+  margin-left: 8%;
+  padding-bottom: 20%;
+  width: 40%;
+  height: 35vh;
+}
+@media (max-width: 500px) {
+  .Intro {
+    height: 20vh;
+    width: 80%;
+    padding-bottom: 50%;
+  }
+}
+ul {
+  font-size: 1.7rem;
+  list-style-type: square;
+  margin-left: 15%;
+}
+@media (max-width: 500px) {
+  ul {
+    column-count: 2;
+  }
+}
+ul li {
+  text-align: left;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+p {
+  font-size: 1.7rem;
+  text-align: left;
+}
+.Skills {
+  margin-left: -40%;
+  margin-right: 8%;
+  border: 1px solid lightsteelblue;
+  padding: 5%;
+  padding-bottom: 20%;
+  width: 40%;
+  height: 35vh;
+}
+@media (max-width: 500px) {
+  .Skills {
+    margin-left: 8%;
+    height: 20vh;
+    width: 80%;
+    padding-bottom: 50%;
+  }
+}
+.Border {
+  border: 1px solid lightsteelblue;
+}
+.History {
+  text-align: center;
+}
+.WorkName {
+  display: flex;
+  justify-content: left;
+}
+.Workplace1 {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.Workplace2 {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: white;
+}
+.Workplace3 {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.Details {
+  padding-left: 10%;
+}
+footer {
+  background-color: aliceblue;
+  padding: 3%;
+  border-top: 3px solid lightsteelblue;
+  text-align: center;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+  margin-left: 13%;
+  margin-right: 13%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  footer nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer nav a {
+  text-decoration: none;
+  margin-right: 10%;
+  color: black;
+  font-size: 1.2rem;
+}
+footer nav a a:hover {
+  color: lightsteelblue;
+}
+footer p {
+  text-align: center;
+  font-size: 1rem;
+}
