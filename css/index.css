@@ -143,12 +143,9 @@ html {
   display: flex;
   justify-content: center;
   padding: 2%;
-  padding-left: 35%;
 }
 .DetailsMargin {
-  margin-right: 50%;
-  margin-left: 65%;
-  text-align: left;
+  padding-left: 10%;
 }
 header {
   background-color: aliceblue;
@@ -268,9 +265,11 @@ p {
 .Border {
   border: 1px solid lightsteelblue;
 }
+.History {
+  text-align: center;
+}
 .WorkName {
   display: flex;
-  flex-direction: row;
   justify-content: left;
 }
 .Workplace1 {
@@ -278,14 +277,12 @@ p {
   display: flex;
   justify-content: center;
   padding: 2%;
-  padding-left: 35%;
 }
 .Workplace2 {
   background-color: whitesmoke;
   display: flex;
   justify-content: center;
   padding: 2%;
-  padding-left: 35%;
   background-color: white;
 }
 .Workplace3 {
@@ -293,12 +290,9 @@ p {
   display: flex;
   justify-content: center;
   padding: 2%;
-  padding-left: 35%;
 }
 .Details {
-  margin-right: 50%;
-  margin-left: 65%;
-  text-align: left;
+  padding-left: 10%;
 }
 footer {
   background-color: aliceblue;
