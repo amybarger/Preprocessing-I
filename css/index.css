@@ -163,22 +163,23 @@ header {
   border-bottom: 3px solid lightsteelblue;
 }
 header h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   margin-left: 10%;
-}
-@media (max-width: 2560px) {
-  header h1 {
-    font-size: 8rem;
-  }
 }
 @media (max-width: 500px) {
   header h1 {
-    font-size: 5rem;
+    font-size: 2rem;
   }
 }
 header #Barger {
+  font-size: 6rem;
   font-weight: bolder;
   margin-left: -5%;
+}
+@media (max-width: 500px) {
+  header #Barger {
+    font-size: 2rem;
+  }
 }
 header .NavHeader {
   display: flex;
@@ -188,15 +189,16 @@ header .NavHeader {
   margin-top: 2%;
   font-size: 2rem;
 }
+@media (max-width: 500px) {
+  header .NavHeader {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .NavHeader a {
   text-decoration: none;
   margin-right: 10%;
   color: black;
-}
-@media (max-width: 2560px) {
-  header .NavHeader a {
-    margin-right: 20%;
-  }
 }
 header .NavHeader a a:hover {
   color: lightsteelblue;
@@ -288,8 +290,17 @@ footer nav {
   flex-direction: row;
   color: whitesmoke;
   margin-left: 13%;
+  margin-right: 13%;
   justify-content: space-between;
 }
-footer footer p {
+footer nav a {
+  text-decoration: none;
+  margin-right: 10%;
+  color: black;
+}
+footer nav a a:hover {
+  color: lightsteelblue;
+}
+footer p {
   text-align: center;
 }
